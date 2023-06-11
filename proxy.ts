@@ -1,6 +1,6 @@
 import { Server } from "https://deno.land/std/http/server.ts";
 
-const TARGET = "https://www.instagram.com";
+const TARGET = "https://www.google.com";
 const handler = async (request: Request) => {
   const url = new URL(request.url);
   const targetUrl = new URL(TARGET + url.pathname + url.search);
